@@ -23,6 +23,7 @@ bool dfs(const Graph &G, int v, int cur = 0){
         //falseがかえって来たらfalseを返す
         if(!dfs(G, next_v, 1 - cur)) return false;
     }
+    return true;
 }
 
 int main(){
